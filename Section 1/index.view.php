@@ -17,22 +17,33 @@
 </head>
 
 <body>
-    
-    
+    <h1><?= $secondBook[1]['name']; ?></h1>
 
-        <ul>
-            <?php foreach($filteredBooks as $book): ?>
-                <li>
-                    <?= $book['publication']; ?> (<?= $book['url']?>) - By <?= $book['name']?> - Year <?= $book['yearPublished']?>
-                </li>
+    <table>
 
+        < < <tr>
 
-                <?php endforeach ;?>
-           
-        </ul>
+            <td></td>
+            </tr>
 
 
-        
+    </table>
+
+
+
+    <ul>
+        <?php foreach ($filteredBooks as $book) : ?>
+            <li>
+                <?= $book['publication']; ?> (<?= $book['url'] ?>) - By <?= $book['name'] ?> - Year <?= $book['yearPublished'] ?>
+            </li>
+
+
+        <?php endforeach; ?>
+
+    </ul>
+
+
+
 
 </body>
 

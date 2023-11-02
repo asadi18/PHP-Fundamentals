@@ -76,6 +76,8 @@ $secondBook  = [
     ]
 ];
 
+
+
 // function filterByName($secondBook , $name){
 //     $filteredBook = [];
 
@@ -114,7 +116,7 @@ $secondBook  = [
 
 //     }
 //     return $filtered;
-   
+
 // }
 
 // $filteredBooks = filter($secondBook, function($book){
@@ -124,8 +126,8 @@ $secondBook  = [
 
 // Built in Function of array filter
 
-$filteredBooks = array_filter($secondBook, function($book){
-    return $book['yearPublished'] >= 1995 && $book['yearPublished'] <= 2020 ; 
+$filteredBooks = array_filter($secondBook, function ($book) {
+    return $book['yearPublished'] >= 1995 && $book['yearPublished'] <= 2020;
 });
 
 
